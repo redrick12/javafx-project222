@@ -1,0 +1,3 @@
+[submodule "subdiretorioB"]
+	path = subdiretorioB
+	url = https://github.com/redrick12/javafx_latorre
