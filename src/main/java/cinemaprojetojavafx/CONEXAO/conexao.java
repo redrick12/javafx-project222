@@ -1,5 +1,5 @@
 
-package CONEXAO;
+package cinemaprojetojavafx.CONEXAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
