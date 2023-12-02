@@ -12,9 +12,9 @@ public class conexao {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            String url = "jdbc:mysql://localhost:3306/sql_latorre.sql22";
-            String usuario = "nada";
-            String senha = "123";
+            String url = "jdbc:mysql://localhost:3306/conexao";
+            String usuario = "root";
+            String senha = "erick123";
 
             conexao = DriverManager.getConnection(url, usuario, senha);
 
