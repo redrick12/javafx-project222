@@ -1,9 +1,9 @@
 # JavaFX Project
-Projeto JavaFX de exemplo usando Maven.
+Projeto JavaFX de um totem de cinema utilizando o Maven. 
 
 ## Como executar
 
-Fazer o clone do repositório.
+Fazer o clone do repositório, abrir a pasta src, main, com e por fim o arquivo cinematotem, dar debug e rodar.
 
 Remover a pasta .git:
 ```bash
@@ -23,3 +23,4 @@ No mesmo terminal que foi configurado o proxy executar o comando:
 ```bash
 ./mvnw javafx:run
 ```
+É de suma importância que a máquina na qual o código rode, possua extensões java e javafx instaladas.
