@@ -3,7 +3,7 @@ Projeto JavaFX de um totem de cinema utilizando o Maven.
 
 ## Como executar
 
-Fazer o clone do repositório, abrir a pasta src, main, com e por fim o arquivo cinematotem, dar debug e rodar.
+Fazer o clone do repositório, abrir a pasta "src", "main", "com" e por fim o arquivo cinematotem, dar debug e rodar.
 
 Remover a pasta .git:
 ```bash
