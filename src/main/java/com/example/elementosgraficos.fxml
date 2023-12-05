@@ -94,6 +94,4 @@
         <Insets bottom="20" left="20" right="20" top="20"/>
     </padding>
 </VBox>
-</Label text="Processando pagamento..." style="-fx-font-size: 18pt;" VBox.vgrow="ALWAYS">
-<children>
-    <VBox>
+
