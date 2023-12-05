@@ -13,9 +13,9 @@ import java.sql.SQLException;
 
 public class Conexao_e_consulta extends Application {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/nome_do_banco";
+    private static final String URL = "jdbc:mysql://localhost:3306/CINEMA";
     private static final String USUARIO = "root";
-    private static final String SENHA = "senha";
+    private static final String SENHA = "erick123";
 
     public static void main(String[] args) {
         launch(args);
@@ -26,7 +26,7 @@ public class Conexao_e_consulta extends Application {
         primaryStage.setTitle("Consulta JavaFX com JDBC");
 
         Label resultLabel = new Label("Resultado da consulta:");
-        
+
         try (Connection connection = DriverManager.getConnection(URL, USUARIO, SENHA)) {
             String consultaSQL = "SELECT * FROM Cinema";
             try (PreparedStatement preparedStatement = connection.prepareStatement(consultaSQL);
@@ -35,14 +35,14 @@ public class Conexao_e_consulta extends Application {
                 StringBuilder resultado = new StringBuilder();
                 while (resultSet.next()) {
                     int id = resultSet.getInt("ID");
-                    String snackBarScene = resultSet.getString("SnackBarScene");
-                    String discountScene = resultSet.getString("DiscountScene");
-                    String paymentScene = resultSet.getString("PaymentScene");
+                    String Lanches = resultSet.getString("Lanches");
+                    String Desconto = resultSet.getString("Desconto");
+                    String Pagamento = resultSet.getString("Pagamento");
 
                     resultado.append("ID: ").append(id)
-                            .append(", SnackBarScene: ").append(snackBarScene)
-                            .append(", DiscountScene: ").append(discountScene)
-                            .append(", PaymentScene: ").append(paymentScene)
+                            .append(", Lanches: ").append(Lanches)
+                            .append(", Desconto: ").append(Desconto)
+                            .append(", Pagamento: ").append(Pagamento)
                             .append("\n");
                 }
 
